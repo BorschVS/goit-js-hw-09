@@ -1,0 +1,59 @@
+input {
+  width: 200px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+button {
+  background-color: rgb(176, 226, 207);
+  border: transparent;
+  border-radius: 5px;
+  padding: 8px 42px;
+}
+
+button:hover {
+  background-color: rgb(159, 204, 187);
+}
+
+button:active {
+  background-color: rgb(135, 173, 159);
+}
+
+button:disabled {
+  background-color: rgb(158, 165, 162);
+  color: #212121;
+}
+
+.timer {
+  display: flex;
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.value {
+  font-size: 48px;
+  background-color: rgb(185, 211, 211, 0.2);
+  border: transparent;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.label {
+  padding: 5px;
+  padding-left: 5;
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  border: transparent;
+
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
