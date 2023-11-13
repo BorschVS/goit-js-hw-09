@@ -1,0 +1,42 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  color: rgb(48, 82, 83);
+}
+
+input {
+  max-width: 250px;
+  padding: 5px 5px;
+  margin: 5px 0;
+  border: 1px solid rgb(71, 116, 116);
+}
+
+input:focus {
+  border: 1px solid rgb(77, 77, 131);
+  outline: 1px solid rgb(77, 77, 131);
+}
+
+button {
+  max-width: 250px;
+  padding: 12px 20px;
+
+  font-weight: 600;
+  color: rgb(72, 72, 81);
+  background-color: rgb(26, 176, 176);
+  border: none;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: rgb(147, 229, 229);
+}
+
+button:active {
+  background-color: rgb(116, 184, 184);
+}
