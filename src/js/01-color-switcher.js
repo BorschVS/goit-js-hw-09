@@ -5,12 +5,17 @@ const refs = {
 
 let intervalId = null;
 refs.btnStop.disabled = false;
+let isActive = false;
 
 refs.btnStart.addEventListener('click', changeBackgroundColor);
 refs.btnStop.addEventListener('click', stopBackgroundColorPicker);
 
-refs.btnStop.disabled = true;
 function changeBackgroundColor() {
+  if (isActive) {
+    return;
+  }
+  isActive = true;
+
   intervalId = setInterval(() => {
     refs.btnStop.disabled = false;
     refs.btnStart.disabled = true;
@@ -20,6 +25,7 @@ function changeBackgroundColor() {
 }
 
 function stopBackgroundColorPicker() {
+  isActive = false;
   refs.btnStop.disabled = true;
   refs.btnStart.disabled = false;
   clearInterval(intervalId);
